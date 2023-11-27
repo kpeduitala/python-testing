@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h2>Welcome to MyApp</h2>
+    <p>This is the home page. Below is a list of data from our database:</p>
+    
+    <!-- Data Table -->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                {% if session.logged_in %}
+                    <th scope="col">Actions</th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+                <tr>
+                    <th scope="row">{{ loop.index }}</th>
+                    <td>{{ item.product }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>{{ item.price }}</td>
+                    {% if session.logged_in %}
+                        <td>
+                            <a href="/edit/{{ item.id }}" class="btn btn-sm btn-primary">Edit</a>
+                            <form method="POST" action="/delete/{{ item.id }}" class="d-inline">
+                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

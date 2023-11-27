@@ -1,0 +1,19 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Database file
+*.db
+
+# Robot Framework logs and reports
+log.html
+output.xml
+report.html
+
+#Cache
+__pycache__/
