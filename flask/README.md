@@ -67,3 +67,16 @@ python app.py
 ```
 
 The application will be accessible at `http://127.0.0.1:5000/`.
+
+## Note on Application Flaws
+
+Intentional Flaws: This application intentionally contains certain flaws or areas that may require improvement or bug fixes. These have been left as part of the project to encourage users to identify and document them as part of their testing and documentation process.
+
+These intentional flaws might include, but are not limited to:
+
+- Potential security vulnerabilities.
+- Inefficiencies in code logic.
+- User experience issues.
+- Error handling deficiencies.
+
+Users are encouraged to thoroughly test the application and document any identified flaws or improvement areas in the test documentation or issue tracker.
