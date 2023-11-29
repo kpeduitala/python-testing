@@ -20,7 +20,15 @@ Testing in software development is the process of evaluating software to verify 
 - **Integration Testing**: Testing the interaction between integrated units/modules as a group.
 - **Acceptance Testing**: Testing the entire application in a real-world scenario to ensure it meets the business requirements.
 
-## Setting Up a Virtual Environment
+## Getting started
+
+Clone the repository to your own machine using git
+
+```sh
+git clone https://github.com/rikurampanen/python-testing
+```
+
+### Setting Up a Virtual Environment
 
 To isolate the testing environment, it's recommended to use virtual environment:
 
@@ -35,7 +43,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-## Installing Dependencies
+### Installing Dependencies
 
 To install dependencies, run:
 
