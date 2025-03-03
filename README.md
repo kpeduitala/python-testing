@@ -25,7 +25,7 @@ Testing in software development is the process of evaluating software to verify 
 Clone the repository to your own machine using git
 
 ```sh
-git clone https://github.com/rikurampanen/python-testing
+git clone https://github.com/kpeduitala/python-testing
 ```
 
 ### Setting Up a Virtual Environment
